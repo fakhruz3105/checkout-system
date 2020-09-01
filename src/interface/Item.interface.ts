@@ -1,7 +1,7 @@
 import { Timestamp } from "typeorm";
 
 export interface ItemInterface {
-    id: string,
+    id: number,
     name: string,
     stock: number,
     price: number,

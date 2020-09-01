@@ -5,7 +5,7 @@ import { Timestamp } from 'typeorm'
 export class ItemDTO implements ItemInterface {
     @IsNotEmpty()
     @IsString()
-    id: string
+    id: number
 
     @IsNotEmpty()
     @IsString()

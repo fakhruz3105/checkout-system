@@ -3,8 +3,8 @@ import { Column, CreateDateColumn, Entity, PrimaryColumn, Timestamp, UpdateDateC
 
 @Entity()
 export class Item implements ItemInterface {
-    @PrimaryColumn()
-    id: string
+    @PrimaryColumn({ type: 'bigint' })
+    id: number
 
     @Column()
     name: string
